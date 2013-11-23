@@ -1,31 +1,21 @@
-\enabletrackers[fonts.missing]
-
 \usetypescript[type-roboto]
-\setupbodyfont[roboto,sans,10pt]
+\setupbodyfont[roboto,sans,14pt]
 
-    \starttypescript [sans] [roboto-thin]
-        \definefontsynonym [Sans]            [file:Roboto-Thin.ttf]
-        \definefontsynonym [SansBold]        [file:Roboto-Light.ttf]
-        \definefontsynonym [SansItalic]      [file:Roboto-ThinItalic.ttf]
-        \definefontsynonym [SansBoldItalic]  [file:Roboto-LightItalic.ttf]
-        \definefontsynonym [SansSlanted]     [SansItalic]
-        \definefontsynonym [SansBoldSlanted] [SansBoldItalic]
-    \stoptypescript
-
+\setuppagenumbering[location=]
 
 \starttext
 
 \switchtobodyfont[roboto-thin,sans]
-{Roboto Thin & {\em Thin Oblique}}
+Roboto Thin & {\em Thin Oblique}
 
 \switchtobodyfont[roboto-light,sans]
-{Roboto Light & {\em Light Oblique}}
+Roboto Light & {\em Light Oblique}
 
 \switchtobodyfont[roboto,sans]
-{Roboto Regular & {\em Oblique}}
+Roboto Regular & {\em Oblique}
 
 \switchtobodyfont[roboto-medium,sans]
-{Roboto Medium & {\em Medium Oblique}}
+Roboto Medium & {\em Medium Oblique}
 
 \switchtobodyfont[roboto,sans]
 {\bf Roboto Bold & {\em Bold Oblique}}
@@ -33,16 +23,27 @@
 \switchtobodyfont[roboto-medium,sans]
 {\bf Roboto Black & {\em Black Oblique}}
 
-
-{\setupbodyfont[roboto-condensed-light,sans]
-{Roboto Condensed Light & {\em Condensed Light Oblique}}
-}
+\setupbodyfont[roboto-condensed-light,sans]
+Roboto Condensed Light & {\em Condensed Light Oblique}
 
 \switchtobodyfont[roboto-condensed,sans]
-{Roboto Condensed & {\em Condensed Oblique}}
+Roboto Condensed & {\em Condensed Oblique}
 
 \switchtobodyfont[roboto-condensed,sans]
 {\bf Roboto Condensed Bold & {\em Condensed Bold Oblique}}
+
+\blank[big]
+
+\switchtobodyfont[roboto-thin]
+Roboto Slab Thin
+
+\switchtobodyfont[roboto-light]
+Roboto Slab Light
+
+\switchtobodyfont[roboto]
+Roboto Slab Regular
+
+{\bf Roboto Slab Bold
 
 
 \stoptext
